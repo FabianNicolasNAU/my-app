@@ -1,4 +1,4 @@
-import {useState, useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import "./App.css";
 
 function App() {
@@ -18,17 +18,19 @@ function App() {
   }
 
   return (
-    <div>
-    <h1>Products List</h1>  
+    <div className="App">
+    <h1>Products List</h1> 
+    <div className="products"> 
       {data && data.products.map((item) => (
-        <div>
+        <div className="product-item">
           <p key={item.title}>{item.title}</p>
           <p key={item.price}>{item.price}</p>
           <p key={item.description}>{item.description}</p>
-          <img src={item.thumbnail} alt="imagen de producto"/>
+          <img src={item.thumbnail}/>
         </div>
 
       ))}
+    </div>
     </div>
   );
 }
