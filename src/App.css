@@ -37,25 +37,25 @@
   }
 }
 
-.App {
-  margin: 0 auto;
-  max-width: 960px;
+.container {
+  width: 100%;
   text-align: center;
-  padding: 20px;
 }
 
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
 }
 
-.product-item {
-  width: 20%;
-  margin: 10px;
-  background-color: #eee;
+.item {
   padding: 10px;
-  text-align: center;
-  box-shadow: 0 0 10px #000;
+  background-color: #f0f0f0;
   border-radius: 5px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
 }
