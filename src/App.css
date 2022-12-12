@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: center;
+  padding: 20px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-item {
+  width: 20%;
+  margin: 10px;
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #000;
+  border-radius: 5px;
+}
